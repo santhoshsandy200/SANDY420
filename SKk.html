@@ -1,0 +1,233 @@
+[1:46 pm, 13/12/2023] Santhoush Kumar Bsc C. S: <!DOCTYPE html>
+<html>
+<head>
+<title>SANTHOSH-portfolio</title>
+<style>
+body 
+{
+    font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: aliceblue;
+}
+
+header {background-color: rgb(78, 2, 255);
+color: rgba(0, 0, 0, 0.705);
+text-align: center;
+padding: 2rem 0;
+position: relative; /* add this */
+}
+
+.header-content h1 { 
+    font-size: 2.5rem;
+}
+
+/* add style for the round profile picture */
+.profile-picture
+ {
+    width: 100px;
+    height: 100px;
+    border-radius: 75%;
+    object-fit: cover;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+}
+nav
+{
+background-color: rgb(3, 8, 12);
+color: rgb(117, 110, 110);
+text-align: center;
+}
+  nav ul
+{
+list-style-type: circle;
+padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+na…
+[0:41 pm, 15/12/2023] Santhoush Kumar Bsc C. S: <!DOCTYPE html>
+<html>
+<head>
+<title>SANTHOSH-portfolio</title>
+<style>
+body 
+{
+    font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: aliceblue;
+}
+
+header {background-color: rgb(78, 2, 255);
+color: rgba(0, 0, 0, 0.705);
+text-align: center;
+padding: 2rem 0;
+position: relative; /* add this */
+}
+
+.header-content h1 { 
+    font-size: 2.5rem;
+}
+
+/* add style for the round profile picture */
+.profile-picture
+ {
+    width: 100px;
+    height: 100px;
+    border-radius: 75%;
+    object-fit: cover;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+}
+nav
+{
+background-color: rgb(3, 8, 12);
+color: rgb(117, 110, 110);
+text-align: center;
+}
+  nav ul
+{
+list-style-type: circle;
+padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: circle;
+    color: antiquewhite;
+}
+
+.section-content 
+{
+    background-color: rgb(222, 217, 224);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(101, 72, 131);
+}
+
+.download-button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(61, 49, 73);
+    padding: 0.5rem 1rem;
+    text-decoration: red;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.download-button:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+footer{
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgb(31, 0, 172);
+    color: rgb(243, 235, 235);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <!-- Add your peofile picture here -->
+        <img src="SANDY.jpeg" alt="your profile picture" class="profile-picture">
+        <h1>SANTHOSH</h1>
+        <p>studing Bsc computer science</p>
+ </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a herf="#about">ABOUT</a></li>
+        <li><a herf="#education">EDUCATION</a></li>
+        <li><a herf="#skills">SKILLS</a></li>
+        <li><a herf="#more">MORE</a></li>
+        <li><a herf="#resume">RESUME</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <div class="section-content">
+        <h2>About Me</h2>
+        <p> Hello Everybuddy ,I am R.SANTHOSH
+            from Thanjavur,
+            I am studying avasc. 
+        </p>
+</div>
+</section>
+
+<section id="education">
+    <div class="section-content">
+       <h2>Education</h2>
+       <p>Bsc Computer science IIIrd Year
+                  AVASC
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="section-content">
+      <h2>Skills</h2>
+      <ul>
+            <li>Editor , wed devolper</li>
+             <li>To understanding to other person</li>
+              <li>java,c++,</li>
+        </ul>
+    </div>
+</section>
+
+    <section id="MORE">
+        <div class="section-content">
+          <h2>MORE</h2>
+          <ul>
+                <li><a href="#">PH NO:9629676086</a> </li>
+                 <li><a href="#">email: santhoshrm2004@gmail.com</a></li>
+                 <!-- Add more projects -->
+            </ul>
+        </div>
+    </section>
+    <section id ="Resume">
+        <center>
+            <div class="section-content">
+                <h2>resume</h2>
+                <a href="RESUME.pdf" class="download-button">view me</a>
+
+            </div>
+        </center>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 R.santhosh </p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[herf^="#"]').forEach(anchor =>  {anchor.addEventListener('click',function(e) {
+            e.preventDefault();
+            const targetId = this.getAttributes('herf').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if(targetElement) {
+                window.scrollTo({
+                    top: targetElement.off setTop,
+                    behavior:'smooth'
+                });
+            }
+        });
+    });
+    </script>
+  </body>
+</html>
